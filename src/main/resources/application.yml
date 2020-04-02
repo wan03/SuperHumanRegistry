@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: super-registry
+  datasource:
+    url: jdbc:postgresql://${SUPERREGISTRY_URL}:5432/postgres?
+    username:  ${SUPERREGISTRY_USERNAME}
+    password: ${SUPERREGISTRY_PASSWORD}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
